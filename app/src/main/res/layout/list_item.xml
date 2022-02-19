@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/list_item_img"
+        android:src="@color/colorPrimary"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/list_item_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/list_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish name"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+    <TextView
+        android:id="@+id/list_item_description"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/list_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_name"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:text="Dish description"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+
+</RelativeLayout>
